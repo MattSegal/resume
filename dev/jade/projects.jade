@@ -10,8 +10,8 @@
 		div(class="row-box row-2")
 			.panel
 				h1
-					|Matt’s Links Website
-					a(href="https://github.com/MattSegal/Link-Sharing-Website") (Github)
+					|Matt’s Links Website 
+					a(href="https://github.com/MattSegal/Link-Sharing-Website")  (Github)
 				p.
 					This site lets users post hyper-links to a personal page, so that they can be shared with friends. A user may browse other users’ profiles, create their own page, as well as add and edit links. The site content is retrieved from a server-side API and dynamically rendered using Mustache.js.  The JavaScript code is currently organized into encapsulated modules. Future work will involve further decoupling the modules and possibly implementing a MVC pattern. 
 				br
@@ -20,11 +20,11 @@
 		div(class="row-box row-2")
 			.panel
 				.img-wrapper
-						img(src="{{url_for('static',filename='img/resume/links-shot.jpg')}}")									
+						img(src="{{url_for('resume_app.static',filename='img/links-shot.jpg')}}")									
 	div(class="row-box row-parent" id="whc")
 		div(class="row-box row-2")
 			.panel
-				h1Women’s Health Clinic Website
+				h1 Women’s Health Clinic Website
 				p.
 					This site is a static web-page for a hypothetical Women’s Health Clinic in Melbourne. Users can browse the site to find out about the Clinic’s services, staff, contact details, etc. The site uses server-side templating to render content between the header and footer.	
 				br
@@ -33,7 +33,7 @@
 		div(class="row-box row-2")
 			.panel
 				.img-wrapper
-						img(src="{{url_for('static',filename='img/resume/whc-shot.jpg')}}")								
+						img(src="{{url_for('resume_app.static',filename='img/whc-shot.jpg')}}")								
 	div(class="row-box row-parent" id="log-reg")
 		div(class="row-box row-2")
 			.panel
@@ -42,35 +42,40 @@
 					a(href="https://github.com/MattSegal/logistic-regression") (Github)
 				p.
 					This Python module is able to fit a logistic regression to a set of training data. The results of the regression can then be used to classify new data. Such a module would be useful in simple automated classification tasks.  For example, this module could be used to predict if a student will pass or fail an exam, given previous data on school performance. 
-		div(class="row-box row-2")
-			.panel
-				.img-wrapper
-					img(src="{{url_for('static',filename='img/resume/log-reg.gif')}}")										
+		div(class="row-box row-2 col-parent")
+			div(class="col-box col-2")
+				.panel
+					.img-wrapper
+						img(src="{{url_for('resume_app.static',filename='img/log-reg.gif')}}")
+			div(class="col-box col-2")
+				.panel
+					.img-wrapper
+						img(src="{{url_for('resume_app.static',filename='img/log-reg-2.png')}}")								
 		
 	div(class="row-box row-parent" id="poker-bot")
 		div(class="row-box row-2")
 			.panel
 				h1
 					|Online Poker Image Recognition Bot
-					a(href="https://github.com/MattSegal/poker-bot") (Github)
+					a(href="https://github.com/MattSegal/poker-bot")  (Github)
 				p.
 					I developed a Python Script that reads data from an online poker table, as a proof-of-concept for an automated online poker bot. I also made a small GUI that allows users to interact with the script. The script works as follows, it:	
 				ul
-					li takes a screenshot of the computer screen
-					li locates and isolates areas containing desirable data
-					li processes these smaller images, removing noise
-					li breaks images of numbers up into single digits
-					li classifies each digit using logistic regression
-					li returns a numerical value for each image
+					li Takes a screenshot of the computer screen
+					li Locates and isolates areas containing desirable data
+					li Processes these smaller images, removing noise
+					li Breaks images of numbers up into single digits
+					li Classifies each digit using logistic regression
+					li Returns a numerical value for each image
 		div(class="row-box row-2 col-parent")
 			div(class="col-box col-2")
 				.panel
 					.img-wrapper
-						img(src="{{url_for('static',filename='img/resume/poker-brain.jpg')}}")
+						img(src="{{url_for('resume_app.static',filename='img/poker-brain.jpg')}}")
 			div(class="col-box col-2")
 				.panel
 					.img-wrapper
-						img(src="{{url_for('static',filename='img/resume/poker-table.png')}}")
+						img(src="{{url_for('resume_app.static',filename='img/poker-table.png')}}")
 	div(class="row-box row-parent" id="python-script")
 		div(class="row-box row-3")
 			.panel
@@ -80,4 +85,4 @@
 		div(class="row-box row-1")
 			.panel
 				.img-wrapper
-					img(src="{{url_for('static',filename='img/resume/python-script.jpg')}}")										
+					img(src="{{url_for('resume_app.static',filename='img/python-script.jpg')}}")

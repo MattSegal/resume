@@ -83,7 +83,7 @@ function bindButton(btnId,eventName) {
 
 
 pageList = ['profile','edu','work','skills','projects','contact'];
-skillsPageList = ['soft','python','web-dev','misc']
+skillsPageList = ['soft','python','front-end-web-dev','back-end-web-dev','misc']
 projectsPageList = ['links','whc','log-reg','poker-bot','python-script',];
 
 // bind nav-buttons
