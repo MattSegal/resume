@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald"><link rel="stylesheet" href="{{ url_for('resume_app.static',filename='css/reset.css') }}"><link rel="stylesheet" href="{{ url_for('resume_app.static',filename='css/style.css') }}"><title>Matt's Resume</title></head><body><div class="header"><div class="header-wrapper"><a href="/"><div class="banner">Matthew Segal Resume</div></a><nav class="navbar-container"><ul class="navbar"><li id="btn-profile">Profile</li><li id="btn-edu">Education</li><li id="btn-work">Work</li><li id="btn-skills">Skills</li><li id="btn-projects">Projects</li><li id="btn-contact">Contact</li></ul></nav></div></div><div class="main"><div class="page-content-wrapper">{% include "profile.html" %}
+{% include "education.html" %}
+{% include "work.html" %}
+{% include "skills.html" %}
+{% include "projects.html" %}
+{% include "contact.html" %}
+</div></div><script src="{{ url_for('resume_app.static',filename='js/jquery-2.1.4.js') }}"></script><script>// when bg image loaded, swap out full image
+window.onload = function loadSharpImages() {
+	// Quit early if older browser (e.g. IE 8).
+	if (!('addEventListener' in window)) return
+
+	// load background
+	var img = new Image();
+	var bgSrc = "{{ url_for('resume_app.static',filename='img/bg.jpg') }}"
+	var div = document.getElementsByTagName("body")[0]
+	img.onload = function() {
+		div.className = 'bg-loaded'
+	}
+	img.src = bgSrc
+
+	// load headshot image
+	img2 = new Image();
+	var hsSrc = "{{url_for('resume_app.static',filename='img/headshot.jpg')}}"
+	var div2 = document.getElementsByClassName("headshot-image")[0]
+	var div3 = document.getElementById("headshot-panel")
+	img2.onload = function() {
+		div3.className += ' headshot-panel-loaded'
+		div2.className += ' headshot-loaded'
+	}
+	img2.src = hsSrc
+};</script><script src="{{ url_for('resume_app.static',filename='js/main.js') }}"></script></body></html>
