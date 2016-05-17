@@ -4,8 +4,8 @@ html(lang="en")
 		meta(charset="utf-8")
 		link(rel="stylesheet", type='text/css', href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800")
 		link(rel="stylesheet", type='text/css', href="https://fonts.googleapis.com/css?family=Oswald")
-		link(rel="stylesheet", href="{{ url_for('resume_app.static',filename='css/reset.css') }}")
-		link(rel="stylesheet", href="{{ url_for('resume_app.static',filename='css/style.css') }}")
+		link(rel="stylesheet", href="{{ url_for('resume.static',filename='css/reset.css') }}")
+		link(rel="stylesheet", href="{{ url_for('resume.static',filename='css/style.css') }}")
 		title Matt's Resume
 	body
 		.header
@@ -30,7 +30,7 @@ html(lang="en")
 				{% include "contact.html" %}
 				
 		//- {% include 'profile.html' %}
-		script(src="{{ url_for('resume_app.static',filename='js/jquery-2.1.4.js') }}")
+		script(src="{{ url_for('resume.static',filename='js/jquery-2.1.4.js') }}")
 		script.
 			// when bg image loaded, swap out full image
 			window.onload = function loadSharpImages() {
@@ -39,7 +39,7 @@ html(lang="en")
 
 				// load background
 				var img = new Image();
-				var bgSrc = "{{ url_for('resume_app.static',filename='img/bg.jpg') }}"
+				var bgSrc = "{{ url_for('resume.static',filename='img/bg.jpg') }}"
 				var div = document.getElementsByTagName("body")[0]
 				img.onload = function() {
 					div.className = 'bg-loaded'
@@ -48,7 +48,7 @@ html(lang="en")
 
 				// load headshot image
 				img2 = new Image();
-				var hsSrc = "{{url_for('resume_app.static',filename='img/headshot.jpg')}}"
+				var hsSrc = "{{url_for('resume.static',filename='img/headshot.jpg')}}"
 				var div2 = document.getElementsByClassName("headshot-image")[0]
 				var div3 = document.getElementById("headshot-panel")
 				img2.onload = function() {
@@ -57,4 +57,4 @@ html(lang="en")
 				}
 				img2.src = hsSrc
 			};
-		script(src="{{ url_for('resume_app.static',filename='js/main.js') }}")
+		script(src="{{ url_for('resume.static',filename='js/main.js') }}")
