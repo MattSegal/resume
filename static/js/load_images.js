@@ -5,7 +5,7 @@ window.onload = function loadSharpImages() {
 
 	// load background
 	var img = new Image();
-	var bgSrc = "{{ url_for('resume.static',filename='img/bg.jpg') }}"
+	var bgSrc = "{{ url_for('dev_resume.static',filename='img/bg.jpg') }}"
 	var div = document.getElementsByTagName("body")[0]
 	img.onload = function() {
 		div.className = 'bg-loaded'
@@ -14,7 +14,7 @@ window.onload = function loadSharpImages() {
 
 	// load headshot image
 	img2 = new Image();
-	var hsSrc = "{{url_for('resume.static',filename='img/headshot.jpg')}}"
+	var hsSrc = "{{url_for('dev_resume.static',filename='img/headshot.jpg')}}"
 	var div2 = document.getElementsByClassName("headshot-image")[0]
 	var div3 = document.getElementById("headshot-panel")
 	img2.onload = function() {
