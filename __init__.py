@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/resume/')
+@app.route('/')
 def show_resume():
     return render_template('resume.html')
 
