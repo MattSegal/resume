@@ -1,4 +1,2 @@
 # tells git which files to ignore
-*.pyc
-venv
-node_modules
+node_modules/
