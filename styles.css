@@ -4,10 +4,28 @@ body, html {
 }
 
 body {
-    /*nav padding*/
-    padding-top: 80px;
+    font-size: 16px;
+    padding-top: 5em; /*top nav padding*/
     font-family: sans-serif;
     color: #333;
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    #nav-inner > h1 {
+        display: none;
+    }
+    ul {
+        -webkit-padding-start: 2em;
+    }
 }
 
 
@@ -43,7 +61,8 @@ nav span {
 
 #content {
     margin: 0 auto;
-    padding: 0px 10px;
+    padding: 0 2em;
+    box-sizing: border-box;
     max-width: 900px;
 }
 
@@ -67,7 +86,6 @@ nav span {
  
 .section.hidden {
     display: none;
-    height: 0;
 }
 
 a {
