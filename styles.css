@@ -52,15 +52,25 @@ nav span {
     opacity: 1;
     transition: opacity 0.7s ease, visibility 0.7s ease;
     height: 100%;
-    /*transition: height 0.7s ease;*/
+    padding-bottom: 30px
+}
+
+.section + .section {
+    border-top: 1px solid #333;
+    padding-top: 30px;
+}
+
+.section.hidden + .section {
+    border: none;
+    padding-top: 0;
 }
  
 .section.hidden {
     display: none;
     height: 0;
-    /*visibility: hidden;*/
-    opacity: 0;
 }
+
+.section.hidden
 
 a {
     text-decoration: none;
