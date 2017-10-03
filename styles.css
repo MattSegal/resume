@@ -32,7 +32,7 @@ nav span {
 }
 
 #nav-inner {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -44,7 +44,7 @@ nav span {
 #content {
     margin: 0 auto;
     padding: 0px 10px;
-    max-width: 700px;
+    max-width: 900px;
 }
 
 .section {
