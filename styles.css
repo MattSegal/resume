@@ -5,7 +5,7 @@ body, html {
 
 body {
     font-size: 16px;
-    padding-top: 5em; /*top nav padding*/
+    padding-top: 3em; /*top nav padding*/
     font-family: sans-serif;
     color: #333;
 }
@@ -28,6 +28,25 @@ body {
     }
 }
 
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+    .page-break {
+        page-break-after: always;
+    }
+
+}
 
 nav {
     position: fixed;
@@ -39,6 +58,10 @@ nav {
     background-color: #333;
 }
 
+nav a {
+    color: #fff;
+}
+
 nav h1 {
     display: inline-block;
     margin: 0;
@@ -46,7 +69,7 @@ nav h1 {
 
 nav span {
     cursor: pointer;
-    user-select: none; 
+    user-select: none;
 }
 
 #nav-inner {
@@ -72,21 +95,14 @@ nav span {
     transition: opacity 0.7s ease, visibility 0.7s ease;
     height: 100%;
     padding-bottom: 2em;
-}
-
-.section + .section {
-    border-top: 1px solid #333;
     padding-top: 2em;
+    border-top: 1px solid #333;
 }
 
-.section.hidden + .section {
-    border: none;
-    padding-top: 0;
+.section:first-child {
+    border-top: none;
 }
- 
-.section.hidden {
-    display: none;
-}
+
 
 a {
     text-decoration: none;
