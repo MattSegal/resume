@@ -1,137 +1,164 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Matthew Segal</title>
-    <link rel='stylesheet' type='text/css' href='./styles.css'>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
     <nav>
-        <div id='nav-inner'>
-            <h1>Matt Segal Resume</h1>
-            <span><a href="#about">About</a></span>
-            <span><a href="#back-end">Back-End</a></span>
-            <span><a href="#devops">DevOps</a></span>
-            <span><a href="#front-end">Front-End</a></span>
-            <span><a href="#work">Work</a></span>
-            <span><a href="#education">Education</a></span>
-        </div>
+      <div id="nav-inner">
+        <h2>Matt Segal Resume</h2>
+      </div>
     </nav>
 
-    <div id='content'>
-        <div id='about' class='section'>
-            <h1>About Me</h1>
-            <p>Hi, I'm Matt Segal, a Melbourne software developer</p>
-            <p>
-                Check out my <a target="_blank" rel="noopener noreferrer" href='https://mattsegal.github.io'>front-end portfolio</a> for a sample of my work
-            </p>
-            <p>You can print this page with CTRL-P</p>
-            <p>Contact me at mattdsegal@gmail.com</p>
-        </div>
+    <div id="content">
+      <div id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I'm Matt Segal, a Melbourne-based software developer. I have
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mattsegal.github.io"
+            >front-end portfolio</a
+          >
+          containing some of my hobby projects. Contact me at
+          mattdsegal@gmail.com, or on 0431417373. You can print this page with
+          CTRL-P
+        </p>
+      </div>
 
-        <div id='back-end' class='section'>
-            <h1>Back-End Development</h1>
-            <p>I am very comfortable writing Python. I typically work with the Django web stack. I am familiar with NumPy and pandas for numerical computing.</p>
-            <p>I write unit tests, use version control and thoroughly document my work when it is important to share.</p>
-            <p>My go-to tools are:</p>
-            <ul>
-                <li>Django web framework (Python)</li>
-                <li>Celery task manager</li>
-                <li>Redis application cache</li>
-                <li>PostgreSQL database</li>
-            </ul>
-        </div>
+      <div id="work" class="section">
+        <h2>Work Experience</h2>
 
-        <div id='devops' class='section'>
-            <h1>DevOps</h1>
-            <p>
-                I am interested in DevOps as it can speed up iteration time and reduce operational risk.
-            </p>
-            <p>
-                I can deploy everything I write to production using automated CI/CD plus containers and config management tools such as Ansible.
-            </p>
-            <p>Tools:</p>
-            <ul>
-                <li>Scripting (bash, Python, Powershell)</li>
-                <li>CI and CD (Jenkins, BuildKite)</li>
-                <li>Containers (Docker, Docker Swarm, AWS ECS)</li>
-                <li>Web server admin (nginx, IIS)</li>
-                <li>Config managment (Ansible, Saltstack, Powershell DSC)</li>
-                <li>AWS (EC2, S3, DynamoDB, CloudFormation, CloudWatch)</li>
-                <li>Server observability (Sentry, NewRelic, SumoLogic, Papertrail)</li>
-            </ul>
-        </div>
+        <h3 class="employer-title">Anika Legal</h3>
+        <p class="subtitle">
+          Software Developer and Technical Advisor - 2019 - 6 months (ongoing)
+        </p>
+        <p>
+          I volunteer for <a href="https://anikalegal.com">Anika Legal</a>, a
+          charitable Victorian start-up that is seeking to provide better access
+          to justice. I have helped Anika by analysing their business
+          requirements, and assisting them in making technology choices to suit
+          their needs. In addition, I have implemented a client-intake system,
+          setup analytics and assisted them with their marketing efforts.
+        </p>
 
-        <div class="page-break"></div>
-        <div id='front-end' class='section'>
-            <h1>Front-End Development</h1>
-            <p>I create stateful, single page JavaScript apps (<a target="_blank" rel="noopener noreferrer" href='https://mattslinks.xyz/'>example</a>)</p>
-            <p>Tools:</p>
-            <ul>
-                <li>ReactJS</li>
-                <li>Redux</li>
-                <li>React Router</li>
-                <li>Webpack + ES6</li>
-                <li>SASS</li>
-            </ul>
-        </div>
+        <h3 class="employer-title">Expense Check</h3>
+        <p class="subtitle">Frontend Developer - 2019 - 6 months</p>
+        <p>
+          I worked as the primary front end developer for an online insurance
+          start-up for a fixed-term period. Upon starting, I quickly cleared out
+          the work-in-progress to enable the first release in several months.
+          After that, I sped up the release cycle to allow weekly releases by
+          assisting the business in breaking work into small valuable chunks,
+          while improving the stability of the existing codebase to minimise
+          operational risk.
+        </p>
 
-        <div id='work' class='section'>
-            <h1>Work Experience</h1>
-            <h2 class='employer-title'>Stocks Digital</h2>
-            <p class='subtitle'>Senior Software Developer - 2018 - 12 months</p>
-            <p>
-                Worked in a small team of developers as a full stack web dev to support an online content marketing business.
-            </p>
-            <p>
-                Built a new CMS using Django, migrated old CMS to the new CMS, implemented automated reporting for clients.
-            </p>
+        <h3 class="employer-title">Stocks Digital</h3>
+        <p class="subtitle">Senior Software Developer - 2018 - 12 months</p>
+        <p>
+          At StocksDigital I worked in a small team of developers to support an
+          online content-marketing business. In the role, I migrated a legacy
+          WordPress website, including thousands of articles and images, to a
+          new Wagtail based CMS. I built a publishing interface for our writing
+          team, as well as an automated reporting tool for our hundreds of
+          clients. My work included a React frontend, a Django backend, our
+          infrastructure and our analytics.
+        </p>
 
-            <h2 class='employer-title'>Kogan.com</h2>
-            <p class='subtitle'>Software Developer - 2017 - 8 months</p>
-            <p>
-                My team was responsible for the Kogan.com e-commerce website. Full stack with ReactJS and Django. Contributed to DevOps practices using Salt and Jenkin
-            </p>
+        <h3 class="employer-title">Kogan.com</h3>
+        <p class="subtitle">Software Developer - 2017 - 8 months</p>
+        <p>
+          At Kogan I worked on the Kogan.com website. My work included front end
+          development in ReactJS, back-end development with Django (Python) and
+          our DevOps practices. In addition to my technical work, I also
+          regularly liaised with stakeholders in marketing and operations to
+          ensure that I shipped code that met the business' needs.
+        </p>
 
-            <h2 class='employer-title'>eNett International</h2>
-            <p class='subtitle'>Software Developer - 2016 - 1 year</p>
-            <p>
-                Back-end C# dev for an online payments web service. Maintained million line, decade old, legacy codebase with tactical bugfixes.
-            </p>
-            <p>
-               Demonstated interest in documenting business logic and sharing knowledge in the org. Became SME in DevOps practices using PowerShell and Jenkins.
-            </p>
+        <h3 class="employer-title">eNett International</h3>
+        <p class="subtitle">Software Developer - 2016 - 1 year</p>
+        <p>
+          I worked on eNett's online-payment web services. In this role I
+          adopted a new tech stack (.NET/SQL Server) and did software
+          maintenance in the production support team. At eNett I took an
+          interest in our DevOps practices, including our configuration
+          managment (PowerShell DSC) and continuous integration pipeline
+          (Jenkins). Another key feature of my time at eNett was my drive to
+          improve our internal documentation of both our architecture and
+          business logic
+        </p>
 
-            <h2 class='employer-title'>Wood and Grieve Engineers</h2>
-            <p class='subtitle'>Acoustic Consultant - 2014 - 9 months</p>
-            <p>
-                Conducted acoustic assessments for the building industry. Assesed the impact of outdoor industrial and road traffic noise on residential buildings. Documented my findings in technical reports, primarily for local councils.
-            </p>
-        </div>
+        <h3 class="employer-title">Wood and Grieve Engineers</h3>
+        <p class="subtitle">Acoustic Consultant - 2014 - 9 months</p>
+        <p>
+          At WGE I conducted acoustic assessments for the building industry. I
+          worked in a team of 4 consultants. I conducted assessments of the
+          impact of outdoor industrial and road traffic noise on residential
+          buildings. I documented my assessments in technical reports, which
+          were usually read by local councils. I explained my findings to
+          architects and project managers via written communication and
+          presentations.
+        </p>
+      </div>
 
+      <div class="page-break"></div>
 
-        <div id='education' class='section'>
-            <h1>Education</h1>
-            <p>
-                Bachelor of Mechanical Engineering, Monash University, 2013 with First Class Honors.
-            </p>
-            <p>Since then completed several courses online:</p>
-            <ul>
-                <li>Principles of Computing (9 weeks)</li>
-                <li>NAND to Tetris part I and II (12 weeks)</li>
-                <li>Intro to Probability (12 weeks)</li>
-            </ul>
-            <p>In addition I have spent my personal time studying:</p>
-            <ul>
-                <li>Reinforcment learning</li>
-                <li>Deep learning</li>
-                <li>Theory of computation</li>
-                <li>Discrete optimisation</li>
-                <li>Analysis of algorithms</li>
-            </ul>
-        </div>
+      <div id="front-end" class="section">
+        <h2>Front-End Development</h2>
+        <p>
+          I create stateful, single page JavaScript apps using React / Redux /
+          Router. I've used SASS, styled components, and Storybook. I write unit
+          tests using Jest and Enzyme. I'm comfortable manging my own build
+          process, and deploying the front-end as an independent static site.
+        </p>
+      </div>
+
+      <div id="back-end" class="section">
+        <h2>Back-End Development</h2>
+        <p>
+          I have worked with back-end Python professionally for 3 years. My
+          typical stack is Django / Postgres / Redis / Celery. I write unit
+          tests with PyTest, use version control and thoroughly document my work
+          when it is important to share.
+        </p>
+      </div>
+
+      <div id="devops" class="section">
+        <h2>DevOps</h2>
+        <p>
+          I implemented DevOps tooling and processes to speed up iteration time
+          and reduce operational risk. I can deploy everything I write to
+          production using automated CI/CD, containers and config management
+          tools such as Ansible.
+        </p>
+      </div>
+
+      <div id="education" class="section">
+        <h2>Education</h2>
+        <p>
+          Bachelor of Mechanical Engineering, Monash University, 2013 with First
+          Class Honors.
+        </p>
+        <p>Since then completed several courses online:</p>
+        <ul>
+          <li>Principles of Computing (9 weeks)</li>
+          <li>NAND to Tetris part I and II (12 weeks)</li>
+          <li>Intro to Probability (12 weeks)</li>
+        </ul>
+        <p>In addition I have spent my personal time studying:</p>
+        <ul>
+          <li>Reinforcment learning</li>
+          <li>Deep learning</li>
+          <li>Theory of computation</li>
+          <li>Discrete optimisation</li>
+          <li>Analysis of algorithms</li>
+        </ul>
+      </div>
     </div>
-</body>
+  </body>
 </html>
