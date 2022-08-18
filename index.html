@@ -7,31 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <nav>
-      <div id="nav-inner">
-        <h2>Matt Segal Resume</h2>
-      </div>
-    </nav>
-
-    <div id="content">
+    <main>
       <div id="about" class="section">
-        <h2>About</h2>
+        <h2>Matthew Segal</h2>
         <p>
-          I'm Matt Segal, a Melbourne-based software developer. I have
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://mattsegal.github.io"
-            >front-end portfolio</a
-          >
-          containing some of my hobby projects. Contact me at
-          mattdsegal@gmail.com, or on 0431417373. You can print this page with
-          CTRL-P
+          I'm a Melbourne-based software dev with 6 years experience
+          spanning backend, frontend, DevOps and scientific computing.
+        </p>
+        <ul>
+          <li>Phone: 0431417373</li>
+          <li>Email: mattdsegal@gmail.com</li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/matthew-segal-aa132093/">here</a></li>
+          <li>Developer blog: <a href="https://mattsegal.dev/">here</a></li>
+          <li>GitHub: <a href="https://github.com/mattsegal">here</a></li>
+        </ul>
+        <p>
+          You can print this page with CTRL-P
+        </p>
+      </div>
+      <div id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+          <li>Backend web development (Python, Django, Wagtail, Celery, pytest, etc.)
+          <li>DevOps (AWS, Ubuntu, Docker, NGINX, Postgres, CI/CD)
+          <li>Frontend web development (React, NextJS, etc.)</li>
+          <li>Scientific computing (NumPy, PyTorch, Jupyter, Pandas, Matplotlib, etc.)
+        </ul>
+      </div>
+      <div id="education" class="section">
+        <h2>Education</h2>
+        <p>
+          Bachelor of Mechanical Engineering, Monash University, 2013 with First
+          Class Honors.
         </p>
       </div>
 
       <div id="work" class="section">
         <h2>Work Experience</h2>
+
+        <h3 class="employer-title">Freelance</h3>
+        <p class="subtitle">Software Developer - 2021 to present - >14 months</p>
+        <p>
+          Working freelance fullstack web dev jobs for clients and digital agencies.
+          Mostly using Django and React.
+        </p>
+
+        <h3 class="employer-title">Anika Legal</h3>
+        <p class="subtitle">
+          Head of Technology - 2019 to present - >3 years
+        </p>
+        <p>
+          I volunteer for <a href="https://anikalegal.com">Anika Legal</a>, a
+          where I help the organisation achieve its mission of "access to justice for everybody" by building software products and providing technical advice.
+        </p>
+
+        <h3 class="employer-title">Monash University</h3>
+        <p class="subtitle">Research DevOps Specialist - 2020 to 2021 - 18 months</p>
+        <p>
+          At Monash I worked with a team of epidemiologists, mathematicians and data scientists to model COVID-19 and tuberculosis in Asia and Oceania. I took primary responsibility for the software (Python, NumPy, Pandas) and digital infrastructure (AWS EC2, S3).
+          I assisted the team in refactoring, testing and publishing the core of their disease modelling framework as a publicly available Python library - summerepi.com
+        </p>
+
+
+        <h3 class="employer-title">Future Fund</h3>
+        <p class="subtitle">Senior Python Developer - 2019 - 4 months (contract)</p>
+        <p>
+          Contracted at the Future Fund (Australia's sovereign wealth fund) via Eliiza on a fixed-term 3 month contract. I assisted the DevOps team with maintaining and enhancing their CI/CD system for Python and .NET applications, deployed to self-hosted infrastructure.
+         </p>
+
+        <div class="page-break"></div>
 
         <h3 class="employer-title">Expense Check</h3>
         <p class="subtitle">Frontend Developer - 2019 - 6 months</p>
@@ -45,19 +89,6 @@
           stability of the existing codebase to minimise operational risk. I
           introduced static typing with FlowJS, production error reporting with
           Sentry, unit tests and automated code-formatting.
-        </p>
-
-        <h3 class="employer-title">Anika Legal</h3>
-        <p class="subtitle">
-          Software Developer and Technical Advisor - 2019 - 6 months (ongoing)
-        </p>
-        <p>
-          I volunteer for <a href="https://anikalegal.com">Anika Legal</a>, a
-          charitable Victorian start-up that is seeking to provide better access
-          to justice. I have helped Anika by analysing their business
-          requirements and assisting them in making technology choices to suit
-          their needs. In addition, I have implemented a client-intake system,
-          setup analytics and assisted them with their marketing efforts.
         </p>
 
         <h3 class="employer-title">Stocks Digital</h3>
@@ -107,77 +138,6 @@
           presentations.
         </p>
       </div>
-
-      <div class="page-break"></div>
-
-
-      <div id="back-end" class="section">
-        <h2>Back-End Development</h2>
-        <p>
-          I have worked with back-end Python professionally for 3 years, primarily using the Django web framework in a Linux environment. 
-          Experienced in using <a href="https://docs.celeryproject.org/en/latest/index.html">Celery</a> for distributed task managment. 
-        </p>
-        <p>
-          I have worked on applications in e-commerce, payments, insurance and online publishing: building APIs, 3rd party integrations and ETL pipelines.
-          I write unit tests with PyTest, use version control and thoroughly document my work
-          when it is important to share.          
-        </p>
-      </div>
-
-      <div id="devops" class="section">
-        <h2>DevOps</h2>
-        <p>
-          I implement DevOps tooling and processes to speed up iteration time
-          and reduce operational risk. I can deploy everything I write to
-          production using automated CI/CD, containers and <a href="https://www.loom.com/share/95fce3bb373e40f99ee91e5892ba177e">config management</a>
-          tools such as Ansible. I am comfortable using AWS and provisioning new
-          infrastructure. I am a big fan of <a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592">The Phoenix Project</a>.
-        </p>
-      </div>
-
-      <div id="datascience" class="section">
-        <h2>Data Science</h2>
-        <p>
-          I am not a professional data scientist, however I am comfortable using the Python data science stack (Jupyter, pandas, NumPy, matplotlib)
-          to do ad-hoc visualisation and analysis. I am familliar with basic machine learning concepts and can <a href="https://github.com/MattSegal/fastai-notes/blob/master/notebooks/lenet-fashion-mnist.ipynb">build neural networks</a> in PyTorch.
-        </p>
-      </div>
-
-
-      <div id="front-end" class="section">
-        <h2>Front-End Development</h2>
-        <p>
-          I create stateful, single page JavaScript apps using React / Redux /
-          Router. I use SASS and styled components. I write unit
-          tests using Jest and Enzyme. I'm comfortable manging my own build
-          process, and deploying the front-end as an independent static site.
-        </p>
-        <p>I've worked in collaboration with in-house and external designers to produce sites that fulfill their UI/UX vision. I can share my work using <a href="https://storybook.js.org/">Storybook</a> to quickly solicit feedback.</a></p>
-      </div>
-
-
-      <div id="education" class="section">
-        <h2>Education</h2>
-        <p>
-          Bachelor of Mechanical Engineering, Monash University, 2013 with First
-          Class Honors.
-        </p>
-        <p>Since then completed several courses online:</p>
-        <ul>
-          <li>Deep Learning for Coders (8 weeks)</li>
-          <li>Principles of Computing (9 weeks)</li>
-          <li>NAND to Tetris part I and II (12 weeks)</li>
-          <li>Intro to Probability (12 weeks)</li>
-        </ul>
-        <p>In addition I have spent my personal time studying:</p>
-        <ul>
-          <li><a href="https://mattsegal.github.io/chicken-game/">Reinforcment learning</a></li>
-          <li>Deep learning</li>
-          <li><a href="https://mattsegal.github.io/turing-machine/">Theory of computation</a></li>
-          <li>Discrete optimisation</li>
-          <li>Analysis of algorithms</li>
-        </ul>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
