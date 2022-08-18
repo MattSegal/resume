@@ -49,8 +49,7 @@ main {
   margin: 0 auto;
   box-sizing: border-box;
   max-width: 900px;
-  padding: 1em 0;
-  padding-bottom: 1em;
+  padding: 1em;
 }
 
 .section {
