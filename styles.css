@@ -10,41 +10,6 @@ body {
   color: #333;
 }
 
-@media (max-width: 700px) {
-  body {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  ul {
-    -webkit-padding-start: 2em;
-  }
-}
-
-@page {
-  size: A4;
-  margin: 0 1000px;
-}
-
-@media print {
-  nav {
-    display: none;
-  }
-
-  .employer-title {
-    margin: 1.5rem 0 0 0 !important;
-  }
-
-  body {
-    font-size: 10px;
-  }
-
-  .page-break {
-    page-break-after: always;
-  }
-}
-
 main {
   margin: 0 auto;
   box-sizing: border-box;
@@ -53,16 +18,21 @@ main {
 }
 
 .section {
-  padding: 0 0 1em 0;
+  padding: 0 0 2em 0;
 }
-.section h2 {
-  margin: 0 0 0.75em 0;
+h2 {
+  margin: 0 0 1em 0;
   background-color: #000;
   color: white;
   padding: 5px 10px;
 }
-.section p {
-  margin: 0 0 0.75em 0;
+
+
+p {
+  margin: 0 0 1.25em 0;
+}
+p,h3 {
+  padding: 0 10px;
 }
 
 a {
@@ -70,7 +40,7 @@ a {
 }
 
 li {
-  line-height: 1.4em;
+  line-height: 1.7em;
 }
 
 p {
@@ -86,6 +56,57 @@ p {
 }
 
 .subtitle {
-  margin-top: 0.3em;
-  font-style: italic;
+  margin: 0 0 0.25em 0;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  ul {
+    -webkit-padding-start: 2em;
+  }
+}
+
+/* Printing */
+
+@page {
+  size: A4;
+  margin: 0 1000px;
+}
+
+@media print {
+  nav {
+    display: none;
+  }
+
+  h2 {
+      margin: 0;
+      background-color: unset;
+      color: #000;
+      padding: 5px 0;
+    }
+    
+  p,h3 {
+    padding: 0;
+  }  
+
+  .employer-title {
+    margin: 1.5rem 0 0 0 !important;
+  }
+
+  body {
+    font-size: 10px;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
 }
